@@ -1,3 +1,19 @@
+# API
+## To create an Entity in the database 
+It will create a new row in journal table.
+```
+curl -X POST http://localhost:9000/catalogs/catalog-123 \
+-H "Content-Type: application/json" \
+-d '{
+"name": "Electronics",
+"description": "Electronic products"
+}
+```
+## To check catalogs 
+Since the View can't handle CatalogCreated event, the array is empty.  
+```aiignore
+curl http://localhost:9000/catalogs/
+```
 # Docker logs
 
 ```
