@@ -27,4 +27,8 @@ services:
       JAVA_TOOL_OPTIONS: >
       STANDALONE_SINGLE_NODE: true
       AKKA_LICENSE_KEY: ${AKKA_LICENSE_KEY}
-      DB_HOST: "postgres-db"
+      DB_HOST: postgres-db
+      DB_PORT: 5432
+      DB_DATABASE: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
